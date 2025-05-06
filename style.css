@@ -1,0 +1,119 @@
+:root {
+    --block-color: #0f503e;
+    --title-color: #1DCD9F;
+    --hover-color: #169976; 
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    /* height: 500vh; */
+    overflow: scroll;
+}
+
+.navBar {
+    background-color: var(--block-color);
+    color: white;
+    display: flex;
+    position: fixed;
+    width: 95vw;
+    height: 5vh;
+    top: 10%;
+    border-radius: 0 45px 45px 0;
+    transition: all 0.5s ease-out;
+}
+
+.navBar.close {
+    width: 2vw;
+    min-width: 40px;
+}
+
+.navBar .navOpenButton {
+    background-color: var(--block-color);
+    color: black;
+    display: flex;
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    right: 0%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 45px 45px 0;
+    border: none;
+    align-self: center;
+    transition: all 0.5s ease-out;
+}
+
+.navBar .navOpenButton:hover {
+    color: white;
+}
+
+.navBar .navblock {
+    /* background-color: red; */
+    color: black;
+    display: flex;
+    position: relative;
+    width: 24%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+    font-size: 150%;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+}
+
+.navBar.close .navblock {
+    width: 0%;
+    opacity: 0%;
+}
+
+.navBar .navblock:hover {
+    color: white;
+}
+
+.material-symbols-outlined.arrow {
+    background-color: var(--block-color);
+    color: black;
+    display: flex;
+    position: fixed;
+    width: 4vh;
+    height: 4vh;
+    top: 90%;
+    left: 49vw;;
+    border-radius: 45px;
+    border: none;
+    justify-content: center;
+    text-align: center;
+    font-size: 3.7vh;
+    transition: all 0.5s ease-out;
+}
+
+.arrow:hover {
+    background-color: var(--hover-color);
+    color: white;
+}
+
+.title {
+    /* background-color: green; */
+    color: var(--title-color);
+    display: flex;
+    position: relative;
+    width: 98.5vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vw;
+    overflow: hidden;
+}
+
+.about {
+    color: white;
+    display: flex;
+    position: relative;
+    height: 100vh;
+    width: 100px;
+    /* top: ; */
+    overflow: hidden;
+}
