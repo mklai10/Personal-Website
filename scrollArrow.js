@@ -1,6 +1,5 @@
 const body = document.querySelector("body");
 const arrow = document.getElementById("arrow");
-// const navBar = document.getElementById("front-nav");
 const nextPagePosition = window.innerHeight;
 
 window.onscroll = (event) => {
@@ -17,9 +16,11 @@ window.onscroll = (event) => {
 }
 
 arrow.addEventListener("click", () => {
+    let rect = aboutSection.getBoundingClientRect();
+
     if (window.pageYOffset > 0) {
         window.scrollTo({top: 0, behavior: "smooth"});
     } else {
-        window.scrollTo({top: nextPagePosition, behavior: "smooth"});
+        window.scrollTo({top: rect.bottom, behavior: "smooth"});
     }
 });

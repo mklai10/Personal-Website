@@ -16,5 +16,5 @@ navOpenButton.addEventListener("click", () => {
 
 aboutButton.addEventListener("click", () => {
     let rect = aboutSection.getBoundingClientRect();
-    window.scrollTo({top: rect.top, behavior: "smooth"});
+    window.scrollTo({top: rect.bottom, behavior: "smooth"});
 });
