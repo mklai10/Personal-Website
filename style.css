@@ -1,7 +1,8 @@
 :root {
-    --block-color: #0f503e;
+    --sticky-color: #0f503e;
     --title-color: #1DCD9F;
     --hover-color: #169976; 
+    --block-color: #0c3529;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
 }
 
 .navBar {
-    background-color: var(--block-color);
+    background-color: var(--sticky-color);
     color: white;
     display: flex;
     position: fixed;
@@ -26,15 +27,15 @@ body {
 
 .navBar.close {
     width: 2vw;
-    min-width: 40px;
+    min-width: 100px;
 }
 
 .navBar .navOpenButton {
-    background-color: var(--block-color);
+    background-color: var(--sticky-color);
     color: black;
     display: flex;
     position: absolute;
-    width: 40px;
+    width: 100px;
     height: 100%;
     right: 0%;
     justify-content: center;
@@ -50,7 +51,7 @@ body {
 }
 
 .navBar .navblock {
-    /* background-color: red; */
+    background-color: var(--sticky-color);
     color: black;
     display: flex;
     position: relative;
@@ -59,6 +60,7 @@ body {
     justify-content: center;
     align-items: center;
     /* border: 1px solid white; */
+    border: none;
     font-size: 150%;
     text-decoration: none;
     transition: all 0.5s ease-out;
@@ -74,14 +76,14 @@ body {
 }
 
 .material-symbols-outlined.arrow {
-    background-color: var(--block-color);
+    background-color: var(--sticky-color);
     color: black;
     display: flex;
     position: fixed;
     width: 4vh;
     height: 4vh;
     top: 90%;
-    left: 49vw;;
+    left: calc(50% - 2vh);;
     border-radius: 45px;
     border: none;
     justify-content: center;
@@ -109,11 +111,57 @@ body {
 }
 
 .about {
-    color: white;
     display: flex;
     position: relative;
+    width: 98vw;
     height: 100vh;
-    width: 100px;
-    /* top: ; */
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
+}
+
+.about .sectionContainer {
+    background-color: var(--block-color);
+    color: black;
+    display: flex;
+    position: relative;
+    width: 75vw;
+    height: 75vh;
+    border-radius: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .contentContainer {
+    /* background-color: red; */
+    color: black;
+    display: flex;
+    position: relative;
+    width: 65vw;
+    height: 65vh;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.about .contentText {
+    width: 50%;
+}
+
+.about .contentHeader {
+    position: relative;
+    width: 100%;
+    /* left: 0%; */
+}
+
+.about .contentPara {
+    position: relative;
+    width: 100%;
+    /* left: 0%; */
+}
+
+.about .image {
+    /* position: relative; */
+    width: 50%;
+    /* height: auto; */
+    object-fit: contain;
 }

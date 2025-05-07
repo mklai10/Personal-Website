@@ -1,5 +1,6 @@
 const body = document.querySelector("body");
 const arrow = document.getElementById("arrow");
+// const navBar = document.getElementById("front-nav");
 const nextPagePosition = window.innerHeight;
 
 window.onscroll = (event) => {
@@ -7,6 +8,11 @@ window.onscroll = (event) => {
         arrow.textContent= "keyboard_arrow_up";
     } else {
         arrow.textContent= "keyboard_arrow_down";
+    }
+
+    // todo refactor this function
+    if (navBar.className == "navBar") {
+        navBar.classList.toggle("close");
     }
 }
 
