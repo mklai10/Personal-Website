@@ -9,14 +9,6 @@ body {
     background-color: black;
     margin: 0;
     padding: 0;
-    /* height: 500vh; */
-    /* overflow: hidden; */
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-body::-webkit-scrollbar {
-    display: none;
 }
 
 .navBar {
@@ -32,8 +24,8 @@ body::-webkit-scrollbar {
 }
 
 .navBar.close {
-    width: 2vw;
-    min-width: 100px;
+    width: 0vw;
+    min-width: 60px;
 }
 
 .navBar .navOpenButton {
@@ -41,7 +33,7 @@ body::-webkit-scrollbar {
     color: black;
     display: flex;
     position: absolute;
-    width: 100px;
+    width: 60px;
     height: 100%;
     right: 0%;
     justify-content: center;
@@ -86,9 +78,8 @@ body::-webkit-scrollbar {
     color: black;
     display: flex;
     position: fixed;
-    width: 4vh;
-    height: 4vh;
-    top: 90%;
+    aspect-ratio: 1 / 1;
+    top: 83%;
     left: calc(50% - 2vh);;
     border-radius: 45px;
     border: none;
@@ -138,7 +129,7 @@ body::-webkit-scrollbar {
     align-items: center;
 }
 
-.about .contentContainer {
+.contentContainer {
     /* background-color: red; */
     color: black;
     display: flex;
@@ -150,24 +141,72 @@ body::-webkit-scrollbar {
 }
 
 .about .contentText {
-    width: 50%;
+    width: 100%;
+    /* height: 100%; */
+    flex-direction: column;
 }
 
 .about .contentHeader {
     position: relative;
     width: 100%;
-    /* left: 0%; */
 }
 
 .about .contentPara {
     position: relative;
     width: 100%;
-    /* left: 0%; */
+}
+
+.about .contentImage {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .about .image {
-    /* position: relative; */
-    width: 50%;
-    /* height: auto; */
-    object-fit: contain;
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    margin: 20px;
+}
+
+.test {
+    display: flex;
+    position: relative;
+    width: 98vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Tablet Adaptiveness */
+@media only screen and (max-width: 1200px) {
+    .contentContainer {
+      flex-direction: column;
+    }
+
+    .contentImage {
+        width: 100%;
+    }
+
+    .contentText {
+        width: 100%;
+    }
+}
+
+/* Mobile Adaptiveness */
+@media only screen and (max-width: 600px) {
+    .navBar.close {
+        min-width: 100px;
+    }
+    
+    .navOpenButton {
+        width: 100px;
+    }
+    
+    .arrow {
+        width: 45px;
+        /* min-width: 75px; */
+    }
 }
