@@ -85,7 +85,7 @@ body {
     border: none;
     justify-content: center;
     text-align: center;
-    font-size: 3.7vh;
+    /* font-size: 3.7vh; */
     transition: all 0.5s ease-out;
 }
 
@@ -182,6 +182,14 @@ body {
 
 /* Tablet Adaptiveness */
 @media only screen and (max-width: 1200px) {
+    .navBar.close {
+        min-width: 100px;
+    }
+    
+    .navOpenButton {
+        width: 100px;
+    }
+    
     .contentContainer {
       flex-direction: column;
     }
@@ -195,18 +203,7 @@ body {
     }
 }
 
-/* Mobile Adaptiveness */
+Mobile Adaptiveness
 @media only screen and (max-width: 600px) {
-    .navBar.close {
-        min-width: 100px;
-    }
     
-    .navOpenButton {
-        width: 100px;
-    }
-    
-    .arrow {
-        width: 45px;
-        /* min-width: 75px; */
-    }
 }
