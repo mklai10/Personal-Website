@@ -40,7 +40,9 @@ body {
     align-items: center;
     border-radius: 0 45px 45px 0;
     border: none;
-    align-self: center;
+    padding: 0%;
+    /* align-self: center; */
+    font-size: 3.7vh;
     transition: all 0.5s ease-out;
 }
 
@@ -108,7 +110,7 @@ body {
     overflow: hidden;
 }
 
-.about {
+.page {
     display: flex;
     position: relative;
     width: 98vw;
@@ -118,7 +120,7 @@ body {
     overflow: hidden;
 }
 
-.about .sectionContainer {
+.page .sectionContainer {
     background-color: var(--block-color);
     color: black;
     display: flex;
@@ -141,44 +143,34 @@ body {
     overflow: hidden;
 }
 
-.about .contentText {
+.page .contentText {
     width: 100%;
     /* height: 100%; */
     flex-direction: column;
 }
 
-.about .contentHeader {
+.page .contentHeader {
     position: relative;
     width: 100%;
 }
 
-.about .contentPara {
+.page .contentPara {
     position: relative;
     width: 100%;
 }
 
-.about .contentImage {
+.page .contentImage {
     display: flex;
     width: 100%;
     justify-content: center;
     overflow: hidden;
 }
 
-.about .image {
+.page .image {
     position: relative;
     max-width: 100%;
     height: auto;
     margin: 20px;
-}
-
-.test {
-    display: flex;
-    position: relative;
-    width: 98vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
 }
 
 /* Mobile Adaptiveness */

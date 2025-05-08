@@ -12,6 +12,7 @@ window.onscroll = (event) => {
     // todo refactor this function
     if (navBar.className == "navBar") {
         navBar.classList.toggle("close");
+        navOpenButton.textContent = openIcon;
     }
 }
 

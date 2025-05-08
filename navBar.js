@@ -1,9 +1,13 @@
 const navBar = document.getElementById("front-nav");
 const navOpenButton = document.getElementById("nav-open-button");
-const aboutButton = document.getElementById("about-button");
-const aboutSection = document.getElementById("about-me");
+
 const closeIcon = "arrow_back_ios";
 const openIcon = "arrow_forward_ios";
+
+const aboutButton = document.getElementById("about-button");
+const aboutSection = document.getElementById("about-section");
+const projectsButton = document.getElementById("projects-button");
+const projectsSection = document.getElementById("projects-section");
 
 navOpenButton.addEventListener("click", () => {
     navBar.classList.toggle("close");
@@ -15,6 +19,9 @@ navOpenButton.addEventListener("click", () => {
 });
 
 aboutButton.addEventListener("click", () => {
-    let rect = aboutSection.getBoundingClientRect();
-    window.scrollTo({top: rect.top, behavior: "smooth"});
+    window.scrollTo({top: aboutSection.offsetTop, behavior: "smooth"});
+});
+
+projectsButton.addEventListener("click", () => {
+    window.scrollTo({top: projectsSection.offsetTop, behavior: "smooth"});
 });
