@@ -83,9 +83,10 @@ body {
     left: calc(50% - 2vh);;
     border-radius: 45px;
     border: none;
+    padding: 0;
     justify-content: center;
     text-align: center;
-    /* font-size: 3.7vh; */
+    font-size: 3.7vh;
     transition: all 0.5s ease-out;
 }
 
@@ -180,14 +181,14 @@ body {
     overflow: hidden;
 }
 
-/* Tablet Adaptiveness */
+/* Mobile Adaptiveness */
 @media only screen and (max-width: 1200px) {
     .navBar.close {
         min-width: 100px;
     }
     
     .navOpenButton {
-        width: 100px;
+        min-width: 100px;
     }
     
     .contentContainer {
@@ -201,9 +202,4 @@ body {
     .contentText {
         width: 100%;
     }
-}
-
-Mobile Adaptiveness
-@media only screen and (max-width: 600px) {
-    
 }
