@@ -42,7 +42,7 @@ body {
     border: none;
     padding: 0%;
     /* align-self: center; */
-    font-size: 3.7vh;
+    font-size: 2.5vh;
     transition: all 0.5s ease-out;
 }
 
@@ -82,7 +82,9 @@ body {
     position: fixed;
     aspect-ratio: 1 / 1;
     top: 83%;
-    left: calc(50% - 2vh);;
+    /* left: calc(50% - 2vh);; */
+    left: 50%;
+    transform: translateX(-50%);
     border-radius: 45px;
     border: none;
     padding: 0;
@@ -90,6 +92,8 @@ body {
     text-align: center;
     font-size: 3.7vh;
     transition: all 0.5s ease-out;
+    
+
 }
 
 .arrow:hover {
@@ -110,7 +114,7 @@ body {
     overflow: hidden;
 }
 
-.page {
+.page1 {
     display: flex;
     position: relative;
     width: 98vw;
@@ -120,19 +124,19 @@ body {
     overflow: hidden;
 }
 
-.page .sectionContainer {
+.page1 .sectionContainer {
     background-color: var(--block-color);
     color: black;
     display: flex;
     position: relative;
     width: 75vw;
-    height: 75vh;
     border-radius: 80px;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+    flex-direction: column;
 }
 
-.contentContainer {
+.page1 .contentContainer {
     /* background-color: red; */
     color: black;
     display: flex;
@@ -140,37 +144,55 @@ body {
     width: 65vw;
     height: 65vh;
     flex-direction: row;
-    overflow: hidden;
 }
 
-.page .contentText {
-    width: 100%;
-    /* height: 100%; */
-    flex-direction: column;
-}
-
-.page .contentHeader {
-    position: relative;
-    width: 100%;
-}
-
-.page .contentPara {
-    position: relative;
-    width: 100%;
-}
-
-.page .contentImage {
+.page1 .contentImage {
     display: flex;
     width: 100%;
     justify-content: center;
     overflow: hidden;
 }
 
-.page .image {
+.page1 .image {
     position: relative;
     max-width: 100%;
     height: auto;
     margin: 20px;
+}
+
+.page2 {
+    display: flex;
+    position: relative;
+    width: 98vw;
+    height: 100vh;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10%;
+}
+
+.page2 .contentHeader {
+    color: var(--block-color);
+}
+
+.page2 .contentGrid {
+    color: var(--block-color);
+    display: grid;
+    width: 65vw;
+    /* height: 65vh; */
+    min-height: 105vh;
+    margin-bottom: 5vh;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 400px);
+    column-gap: 5vw;
+    row-gap: 5vh;
+}
+
+.gridBox {
+    /* background-color: red; */
+    border: 1px white;
+    border-style: solid;
+    min-height: 35vh;
 }
 
 /* Mobile Adaptiveness */
@@ -185,13 +207,5 @@ body {
     
     .contentContainer {
       flex-direction: column;
-    }
-
-    .contentImage {
-        width: 100%;
-    }
-
-    .contentText {
-        width: 100%;
     }
 }
