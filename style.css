@@ -155,6 +155,7 @@ body {
 
 .page1 .contentText {
     flex-direction: column;
+    max-width: 750px;
 }
 
 .page1 .contentHeader {
