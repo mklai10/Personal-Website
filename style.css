@@ -202,7 +202,7 @@ body {
     min-height: 105vh;
     margin-bottom: 5vh;
     justify-content: center;
-    grid-template-columns: repeat(auto-fill, 620px);
+    grid-template-columns: repeat(auto-fill, 550px);
     column-gap: 5vw;
     row-gap: 5vh;
 }
