@@ -46,7 +46,6 @@ body {
     border-radius: 0 45px 45px 0;
     border: none;
     padding: 0%;
-    /* align-self: center; */
     font-size: 2.5vh;
     transition: all 0.5s ease-out;
 }
@@ -126,15 +125,14 @@ body {
 }
 
 .page1 .sectionContainer {
-    background-color: var(--block-color);
-    color: black;
+    /* background-color: var(--block-color); */
+    /* color: black; */
     display: flex;
     position: relative;
     width: 75vw;
     border: 1px var(--title-color);
     border-radius: 80px;
     border-style: solid;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
 }
@@ -145,7 +143,6 @@ body {
     display: flex;
     position: relative;
     width: 65vw;
-    /* height: 65vh; */
     flex-direction: row;
 }
 
@@ -162,7 +159,7 @@ body {
     display: flex;
     width: 100%;
     justify-content: center;
-    /* overflow: hidden; */
+    margin: 20px;
 }
 
 .page1 .image {
@@ -176,8 +173,6 @@ body {
     display: flex;
     position: relative;
     width: 100%;
-    /* height: 100vh; */
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
     padding-bottom: 10%;
@@ -194,7 +189,6 @@ body {
     color: var(--block-color);
     display: grid;
     width: 65vw;
-    /* height: 65vh; */
     min-height: 105vh;
     margin-bottom: 5vh;
     justify-content: center;
@@ -208,6 +202,7 @@ body {
     border: 1px var(--title-color);
     border-style: solid;
     min-height: 35vh;
+    text-decoration: none;
 }
 
 .gridBox .image {
@@ -216,16 +211,14 @@ body {
 }
 
 .gridHeader {
-    color: black;
+    color: var(--block-color);
     text-shadow: var(--text-outline);
     display: flex;
     justify-content: center;
 }
 
 .contentText {
-    color: black;
-    /* -webkit-text-stroke-width: 1.0px;
-    -webkit-text-stroke-color: var(--title-color); */
+    color: var(--block-color);
     text-shadow: var(--text-outline);
     display: flex;
     padding: 5px;
