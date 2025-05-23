@@ -1,8 +1,18 @@
 :root {
-    --sticky-color: #0f503e;
+    /* --sticky-color: #0f503e;
     --title-color: #1DCD9F;
     --hover-color: #169976; 
     --block-color: #0c3529;
+    --border-color: #0c3529;
+    --background-color: black; */
+
+    --background-color: white;
+    --border-color: black;
+    --button-color: black;
+    --hover-color: #1DCD9F;
+    --title-color: black;
+    --text-color-black: black;
+    --text-color-white: white;
     --text-outline: 
         1px 1px 0 var(--title-color),
         -1px 1px 0 var(--title-color),
@@ -11,20 +21,23 @@
 }
 
 body {
-    background-color: black;
+    /* background-color: black; */
+    background-color: var(--background-color);
     margin: 0;
     padding: 0;
 }
 
 .navBar {
-    background-color: var(--sticky-color);
-    color: white;
+    background-color: var(--background-color);
+    color: var(--border-color);
     display: flex;
     position: fixed;
+    z-index: 1000;
     width: 95vw;
     height: 5vh;
     top: 10%;
     border-radius: 0 45px 45px 0;
+    border: solid;
     transition: all 0.5s ease-out;
 }
 
@@ -35,9 +48,10 @@ body {
 
 .navBar .navOpenButton {
     background-color: var(--sticky-color);
-    color: black;
+    color: var(--button-color);
     display: flex;
     position: absolute;
+    z-index: 1000;
     width: 60px;
     height: 100%;
     right: 0%;
@@ -51,12 +65,12 @@ body {
 }
 
 .navBar .navOpenButton:hover {
-    color: white;
+    color: var(--hover-color);
 }
 
 .navBar .navblock {
     background-color: var(--sticky-color);
-    color: black;
+    color: var(--text-color-black);
     display: flex;
     position: relative;
     width: 24%;
@@ -65,23 +79,27 @@ body {
     align-items: center;
     /* border: 1px solid white; */
     border: none;
+    padding: 0;
     font-size: 150%;
     text-decoration: none;
     transition: all 0.5s ease-out;
+    z-index: 1;
 }
 
 .navBar.close .navblock {
     width: 0%;
     opacity: 0%;
+    z-index: 1000;
 }
 
 .navBar .navblock:hover {
-    color: white;
+    color: var(--hover-color);
 }
 
+
 .material-symbols-outlined.arrow {
-    background-color: var(--sticky-color);
-    color: black;
+    background-color: var(--background-color);
+    color: var(--button-color);
     display: flex;
     position: fixed;
     aspect-ratio: 1 / 1;
@@ -89,16 +107,18 @@ body {
     left: 50%;
     transform: translateX(-50%);
     border-radius: 45px;
-    border: none;
+    border: solid;
+    border-color: var(--border-color);
     padding: 0;
     justify-content: center;
     text-align: center;
     font-size: 3.7vh;
+    z-index: 1000;
 }
 
 .arrow:hover {
-    background-color: var(--hover-color);
-    color: white;
+    /* background-color: var(--hover-color); */
+    color: var(--hover-color);
 }
 
 .title {
@@ -114,79 +134,99 @@ body {
     overflow: hidden;
 }
 
-.page1 {
+.sectionHeader {
+    background-color: var(--background-color);
+    color: var(--text-color-black);
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    width: 100vw;
+    text-align: center;
+    font-size: 70px;
+}
+
+.page.one {
     display: flex;
     position: relative;
     width: 100%;
     min-height: 100vh;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    flex-direction: column;
 }
 
-.page1 .sectionContainer {
-    /* background-color: var(--block-color); */
-    /* color: black; */
+.sectionContainer {
+    background-color: var(--block-color);
     display: flex;
     position: relative;
     width: 75vw;
-    border: 1px var(--title-color);
+    border: 1px var(--border-color);
     border-radius: 80px;
     border-style: solid;
     align-items: center;
     flex-direction: column;
 }
 
-.page1 .contentContainer {
-    /* background-color: red; */
-    color: black;
+.contentContainer {
     display: flex;
     position: relative;
     width: 65vw;
     flex-direction: row;
 }
 
-.page1 .contentText {
+.contentText {
+    color: var(--text-color-black);
+    /* text-shadow: var(--text-outline); */
+    display: flex;
+    padding: 5px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.page.one .contentText {
     flex-direction: column;
     max-width: 750px;
 }
 
-.page1 .contentHeader {
-    text-shadow: var(--text-outline);
+.contentHeader {
+    color: var(--text-color-black);
 }
 
-.page1 .contentImage {
+.contentImage {
     display: flex;
     width: 100%;
     justify-content: center;
     margin: 20px;
 }
 
-.page1 .image {
+.image {
+    display: flex;
     position: relative;
     max-width: 100%;
+    border: solid;
+    border-color: var(--border-color);
+}
+
+.page.one .image {
+    /* position: relative;
+    max-width: 100%; */
     height: auto;
     margin: 20px;
 }
 
-.page2 {
+.page.two {
     display: flex;
     position: relative;
     width: 100%;
+    min-height: 100vh;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     padding-bottom: 10%;
 }
 
-.page2 .contentHeader {
-    color: var(--block-color);
-    text-shadow: var(--text-outline);
-    font-size: 70px;
-}
-
-.page2 .contentGrid {
+.contentGrid {
     /* background-color: blueviolet; */
-    color: var(--block-color);
     display: grid;
     width: 65vw;
     min-height: 105vh;
@@ -199,31 +239,39 @@ body {
 
 .gridBox {
     background-color: var(--block-color);
-    border: 1px var(--title-color);
+    border: 4px var(--border-color);
     border-style: solid;
     min-height: 35vh;
     text-decoration: none;
 }
 
+.gridBox:hover {
+    rotate: -5deg;
+    border-color: var(--hover-color);
+}
+
 .gridBox .image {
-    display: flex;
-    max-width: 100%;
+    border: none;
+    border-bottom: solid;
+    border-color: var(--border-color);
 }
 
 .gridHeader {
-    color: var(--block-color);
-    text-shadow: var(--text-outline);
+    color: var(--text-color-black);
+    /* text-shadow: var(--text-outline); */
     display: flex;
     justify-content: center;
 }
 
-.contentText {
-    color: var(--block-color);
-    text-shadow: var(--text-outline);
-    display: flex;
-    padding: 5px;
-    font-size: 25px;
-    font-weight: 900;
+.hidden {
+    opacity: 0;
+    translate: 0px 100px;
+    transition: 1000ms;
+}
+
+.shown {
+    opacity: 1;
+    translate: 0px 0px;
 }
 
 /* Mobile Adaptiveness */

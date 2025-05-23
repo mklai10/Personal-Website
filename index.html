@@ -12,8 +12,9 @@
 <body>
     <div class="title" id="title-text"></div>
 
-    <div class="page1" id="about-section">
-        <div class="sectionContainer"> 
+    <div class="page one" id="about-section">
+        <h1 class="sectionHeader hidden">About Me</h1>
+        <div class="sectionContainer hidden"> 
             <div class="contentContainer" id="content-container">
                 <div class="contentText" id="content-text">
                     <h1 class="contentHeader">
@@ -55,10 +56,10 @@
         </div>
     </div>
 
-    <div class="page2" id="projects-section">
-            <h1 class="contentHeader">Projects</h1>
+    <div class="page two" id="projects-section">
+            <h1 class="sectionHeader hidden">Projects</h1>
             <div class="contentGrid">
-                <a href="https://github.com/mklai10/EscapeLavis" target="_blank" class="gridBox">
+                <a href="https://github.com/mklai10/EscapeLavis" target="_blank" class="gridBox hidden">
                     <img src="media\imgs\EscapeLavis.png" class="image">
                     <h1 class="gridHeader">Escape Lavis</h1>
                     <p class="contentText">
@@ -75,7 +76,7 @@
                         implement a way to properly escape and win.
                     </p>
                 </a>
-                <a href="https://github.com/mklai10/valentines" target="_blank" class="gridBox">
+                <a href="https://github.com/mklai10/valentines" target="_blank" class="gridBox hidden">
                     <img src="media\imgs\Valentines.png" class="image">
                     <h1 class="gridHeader">Valentines Project</h1>
                     <p class="contentText">
@@ -90,7 +91,7 @@
                         every coming valentines until I get a valentine.
                     </p>
                 </a>
-                <a href="https://github.com/mklai10/discordBotGradle" target="_blank" class="gridBox">
+                <a href="https://github.com/mklai10/discordBotGradle" target="_blank" class="gridBox hidden">
                     <img src="media\imgs\Discord.png" class="image">
                     <h1 class="gridHeader">Discord Bot</h1>
                     <p class="contentText">
@@ -101,8 +102,7 @@
                         that I was in, but it expanded to be capable of creating 
                         server profiles, playing heads or tails, and viewing user
                         profile pictures. It uses commands that users would input
-                        to then do the action. A couple years back Discord disallowed 
-                        the usage of music bots so that feature is no longer. 
+                        to then do the action.
                     </p>
                 </a>
                 <!-- <div class="gridBox">Four</div>
@@ -132,7 +132,7 @@
     <script src="navBar.js" ></script>
     <script src="scrollArrow.js"></script>
     <script src="text.js"></script>
-
+    <script src="scrollIn.js"></script>
 </body>
 
 </html>
