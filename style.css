@@ -243,7 +243,7 @@ body {
     padding-top: 5%;
     margin-bottom: 5vh;
     justify-content: center;
-    grid-template-columns: repeat(auto-fill, 500px);
+    grid-template-columns: repeat(auto-fill, 450px);
     column-gap: 5vw;
     row-gap: 5vh;
 }
@@ -258,7 +258,7 @@ body {
 }
 
 .gridBox:hover {
-    /* rotate: -5deg; */
+    rotate: -5deg;
     border-color: var(--hover-color);
 }
 
@@ -357,12 +357,16 @@ body {
     .navOpenButton {
         min-width: 100px;
     }
+
+    .page {
+        padding-bottom: 15vh;
+    }
     
     .contentContainer {
       flex-direction: column;
     }
 
     .page.projects .contentText {
-        min-height: 25vh;
+        min-height: 20vh;
     }
 }
