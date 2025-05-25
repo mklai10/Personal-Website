@@ -8,6 +8,8 @@ const aboutButton = document.getElementById("about-button");
 const aboutSection = document.getElementById("about-section");
 const projectsButton = document.getElementById("projects-button");
 const projectsSection = document.getElementById("projects-section");
+const contactsButton = document.getElementById("contacts-button");
+const contactsSection = document.getElementById("contacts-section");
 
 navOpenButton.addEventListener("click", () => {
     navBar.classList.toggle("close");
@@ -24,4 +26,8 @@ aboutButton.addEventListener("click", () => {
 
 projectsButton.addEventListener("click", () => {
     window.scrollTo({top: projectsSection.offsetTop, behavior: "smooth"});
+});
+
+contactsButton.addEventListener("click", () => {
+    window.scrollTo({top: contactsSection.offsetTop, behavior: "smooth"});
 });
