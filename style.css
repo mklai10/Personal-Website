@@ -358,8 +358,8 @@ body {
         min-width: 100px;
     }
 
-    .arrow {
-        top: 90%;
+    .material-symbols-outlined.arrow {
+        top: 95%;
     }
 
     .page {
