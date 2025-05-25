@@ -359,7 +359,11 @@ body {
     }
 
     .page {
-        margin-bottom: 0vh;
+        margin-bottom: 15vh;
+    }
+
+    .page.intro {
+        margin-bottom: 0;
     }
     
     .contentContainer {
