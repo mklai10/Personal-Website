@@ -137,7 +137,8 @@ body {
 }
 
 .page.contacts {
-    margin-bottom: 0;
+    min-height: 0;
+    /* margin-bottom: 0; */
 }
 
 .title {
@@ -202,7 +203,7 @@ body {
 }
 
 .page.projects .contentText {
-    min-height: 45vh;
+    min-height: 50vh;
     margin: 0%;
     padding-left: 5%;
     padding-right: 5%;
@@ -354,5 +355,9 @@ body {
     
     .contentContainer {
       flex-direction: column;
+    }
+
+    .page.projects .contentText {
+        min-height: 25vh;
     }
 }
