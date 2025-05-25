@@ -38,6 +38,7 @@ body {
     top: 10%;
     border-radius: 0 45px 45px 0;
     border: solid;
+    border-left: none;
     transition: all 0.5s ease-out;
 }
 
@@ -96,7 +97,6 @@ body {
     color: var(--hover-color);
 }
 
-
 .material-symbols-outlined.arrow {
     background-color: var(--background-color);
     color: var(--button-color);
@@ -133,6 +133,10 @@ body {
 }
 
 .page.intro {
+    margin-bottom: 0;
+}
+
+.page.contacts {
     margin-bottom: 0;
 }
 
