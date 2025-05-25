@@ -359,7 +359,7 @@ body {
     }
 
     .page {
-        padding-bottom: 15vh;
+        margin-bottom: 0vh;
     }
     
     .contentContainer {
