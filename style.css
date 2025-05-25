@@ -21,7 +21,6 @@
 }
 
 body {
-    /* background-color: black; */
     background-color: var(--background-color);
     margin: 0;
     padding: 0;
@@ -122,14 +121,14 @@ body {
 }
 
 .title {
-    /* background-color: green; */
     color: var(--title-color);
     display: flex;
     position: relative;
-    width: 98.5vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+    width: 50%;
+    /* height: 20%; */
+    min-height: 30vh;
+    /* justify-content: center; */
+    /* align-items: center; */
     font-size: 6vw;
     overflow: hidden;
 }
@@ -140,12 +139,12 @@ body {
     position: sticky;
     z-index: 1;
     top: 0;
-    width: 100vw;
+    width: 100%;
     text-align: center;
     font-size: 70px;
 }
 
-.page.one {
+.page {
     display: flex;
     position: relative;
     width: 100%;
@@ -174,29 +173,28 @@ body {
     flex-direction: row;
 }
 
+.contentHeader {
+    color: var(--text-color-black);
+}
+
 .contentText {
     color: var(--text-color-black);
-    /* text-shadow: var(--text-outline); */
     display: flex;
     padding: 5px;
     font-size: 25px;
     font-weight: 900;
 }
 
-.page.one .contentText {
+.page.about .contentText {
     flex-direction: column;
     max-width: 750px;
-}
-
-.contentHeader {
-    color: var(--text-color-black);
 }
 
 .contentImage {
     display: flex;
     width: 100%;
     justify-content: center;
-    margin: 20px;
+    margin: 30px;
 }
 
 .image {
@@ -207,22 +205,11 @@ body {
     border-color: var(--border-color);
 }
 
-.page.one .image {
+.page.about .image {
     /* position: relative;
     max-width: 100%; */
     height: auto;
     margin: 20px;
-}
-
-.page.two {
-    display: flex;
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 10%;
 }
 
 .contentGrid {
