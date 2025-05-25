@@ -358,6 +358,10 @@ body {
         min-width: 100px;
     }
 
+    .arrow {
+        top: 90%;
+    }
+
     .page {
         margin-bottom: 15vh;
     }
