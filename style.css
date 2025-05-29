@@ -76,6 +76,7 @@ body {
     justify-content: center;
     flex-direction: row;
     gap: 10%;
+    transition: all 0.6s ease-out;
 }
 
 .navblock {
