@@ -75,8 +75,12 @@ body {
     width: 90%;
     justify-content: center;
     flex-direction: row;
-    gap: 10%;
-    transition: all 0.6s ease-out;
+    gap: 15%;
+    transition: all 0.7s ease-out;
+}
+
+.navBar.close .navBlockContainer {
+    width: 0;
 }
 
 .navblock {
@@ -361,6 +365,10 @@ body {
 @media only screen and (max-width: 1200px) {
     .navBar.close {
         min-width: 100px;
+    }
+
+    .navBlockContainer {
+        gap: 10%;
     }
     
     .navOpenButton {
